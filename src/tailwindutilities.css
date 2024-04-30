@@ -1,0 +1,123 @@
+@layer components {
+  .container {
+    @apply w-full;
+  }
+  .title {
+    @apply bg-black w-screen;
+  }
+  .header-container {
+    @apply bg-black w-screen;
+  }
+  .title-text {
+    @apply pt-10 text-white text-center text-5xl font-mono;
+  }
+  .sub-title {
+    @apply text-gray-400 text-center text-xs font-mono pb-10;
+  }
+  .nav-btn-container {
+    @apply grid grid-cols-6 gap-4 pt-2;
+  }
+  .nav-bar-buttons {
+    @apply w-full text-black font-bold font-mono my-2 text-lg font-medium;
+  }
+  .nav-bar-buttons.active {
+    @apply text-red-900 rounded-xl;
+  }
+  .gallery {
+    @apply w-3/4 ml-52;
+    @apply h-custom-height;
+  }
+  .images {
+    @apply w-full h-full object-cover;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .left-arrow,
+  .right-arrow {
+    @apply absolute;
+    @apply text-2xl text-black;
+    @apply bg-white;
+    @apply p-4;
+    @apply mx-3;
+    @apply cursor-pointer;
+  }
+  .header-container {
+    @apply flex items-center justify-between p-4;
+  }
+  .instagram-logo,
+  .facebook-logo,
+  .twitter-logo {
+    @apply w-5 mx-2;
+  }
+  .search-bar {
+    @apply w-5;
+  }
+  .subscribe {
+    @apply text-white text-sm;
+  }
+  .news-letter-logo {
+    @apply w-5 mr-1;
+  }
+  .subscribe-container {
+    @apply flex items-center justify-between;
+  }
+  .intro {
+    @apply mt-5 p-10 text-justify bg-custom-bg-color-desc w-3/4 ml-56;
+  }
+  .welcome-message {
+    @apply font-semibold mb-3 text-xl font-sans;
+  }
+  .quote {
+    @apply font-bold font-sans text-lg;
+  }
+  .core-values {
+    @apply font-bold  font-sans mb-2 text-lg;
+  }
+  .details {
+    @apply mb-6 text-sm font-sans text-gray-900;
+  }
+  .desc-header {
+    @apply font-semibold font-sans;
+  }
+  .details-ul {
+    @apply mb-6;
+  }
+  .recipe-container {
+    @apply mt-5 ml-16 w-3/4 ml-56 h-1/2 grid grid-cols-3 gap-4 bg-custom-bg-color-desc;
+  }
+  .recipe-cell {
+    @apply h-3/4 cursor-pointer;
+  }
+  .recipe-title {
+    @apply my-3 text-center font-bold text-gray-800;
+  }
+  .modal-backdrop {
+    @apply h-full w-full top-0 left-0 fixed bg-black bg-opacity-50 flex justify-center items-center z-highest;
+  }
+  .modal-content {
+    @apply bg-custom-bg-color-desc p-10 rounded-md w-1/2 h-3/4 shadow-md overflow-y-auto;
+  }
+  .tools {
+    @apply w-1/4 rounded-lg shadow-md ml-64 mt-5;
+  }
+  .tool-desc {
+    @apply mb-4 mt-2 mr-60;
+  }
+  .tool-container {
+    @apply grid grid-cols-2 col-span-4 mb-2;
+  }
+  .about-me {
+    @apply text-xl font-bold font-mono mb-2;
+  }
+  .about_me_desc {
+    @apply font-sans text-sm mb-4 leading-snug;
+  }
+  .submit-btn {
+    @apply bg-black text-white my-3 w-24 p-3 rounded-3xl font-sans text-sm;
+  }
+  .header {
+    @apply text-xl mb-2 font-bold;
+  }
+  .procedure-list {
+    @apply mb-2;
+  }
+}
